@@ -1,5 +1,5 @@
 const clientId = '099385fbbb994574938d2c167deb7cdc';
-const redirectUri = 'http://localhost:3000';
+const redirectUri = 'http://spot-gen.surge.sh';
 let accessToken;
 
 const Spotify = {
@@ -47,6 +47,7 @@ const Spotify = {
             }));
         });
     },
+
     savePlaylist(name, trackUris) {
         if (!name || !trackUris.length) {
           return;
